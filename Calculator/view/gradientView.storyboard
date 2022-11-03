@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Gradient View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="GradientViewController" id="Y6W-OH-hqX" customClass="GradientViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MicrosoftTeams-image (2)" translatesAutoresizingMaskIntoConstraints="NO" id="04T-Wt-5VD">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AeW-wb-bdF">
+                                <rect key="frame" x="37" y="221" width="339" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6Ij-ae-oQP"/>
+                                    <constraint firstAttribute="width" constant="339" id="v0c-c6-tba"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sBv-yq-AIz">
+                                <rect key="frame" x="37" y="324" width="339" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3x6-kD-mmU"/>
+                                    <constraint firstAttribute="width" constant="339" id="787-6z-udA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="AeW-wb-bdF" secondAttribute="trailing" constant="38" id="5vT-ar-0bx"/>
+                            <constraint firstItem="sBv-yq-AIz" firstAttribute="top" secondItem="AeW-wb-bdF" secondAttribute="bottom" constant="53" id="9z6-8d-ScU"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="sBv-yq-AIz" secondAttribute="trailing" constant="38" id="MkU-af-5mN"/>
+                            <constraint firstItem="AeW-wb-bdF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="37" id="UEf-jh-Ded"/>
+                            <constraint firstItem="04T-Wt-5VD" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="ZIa-N8-pT9"/>
+                            <constraint firstItem="04T-Wt-5VD" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="fSy-dM-XsB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="04T-Wt-5VD" secondAttribute="bottom" id="hvr-Jz-M3C"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="04T-Wt-5VD" secondAttribute="trailing" id="jNs-z4-GT9"/>
+                            <constraint firstItem="AeW-wb-bdF" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="177" id="vBY-pG-iIK"/>
+                            <constraint firstItem="sBv-yq-AIz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="37" id="wjd-ab-Uzm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backImage" destination="04T-Wt-5VD" id="9YZ-7u-9wY"/>
+                        <outlet property="password" destination="sBv-yq-AIz" id="BBC-Vi-Owj"/>
+                        <outlet property="username" destination="AeW-wb-bdF" id="svR-DT-cAW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="89.732142857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MicrosoftTeams-image (2)" width="639.5" height="359.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

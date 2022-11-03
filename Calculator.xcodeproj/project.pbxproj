@@ -17,6 +17,9 @@
 		8C3D22D5290FC92500326E5F /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3D22D4290FC92500326E5F /* CalculatorTests.swift */; };
 		8C3D22DF290FC92500326E5F /* CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3D22DE290FC92500326E5F /* CalculatorUITests.swift */; };
 		8C3D22E1290FC92500326E5F /* CalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3D22E0290FC92500326E5F /* CalculatorUITestsLaunchTests.swift */; };
+		8C3D22F2291253E100326E5F /* gradientView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C3D22F1291253E100326E5F /* gradientView.storyboard */; };
+		8C3D22F8291256A700326E5F /* GradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3D22F7291256A700326E5F /* GradientViewController.swift */; };
+		8C3D22FA2912D1DE00326E5F /* UIGradientImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3D22F92912D1DE00326E5F /* UIGradientImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		8C3D22DA290FC92500326E5F /* CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C3D22DE290FC92500326E5F /* CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITests.swift; sourceTree = "<group>"; };
 		8C3D22E0290FC92500326E5F /* CalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8C3D22F1291253E100326E5F /* gradientView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = gradientView.storyboard; sourceTree = "<group>"; };
+		8C3D22F7291256A700326E5F /* GradientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientViewController.swift; sourceTree = "<group>"; };
+		8C3D22F92912D1DE00326E5F /* UIGradientImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIGradientImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,9 @@
 		8C3D22B9290FC92200326E5F /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				8C3D22F0291253C300326E5F /* controller */,
+				8C3D22EE291253AA00326E5F /* view */,
+				8C3D22ED291253A400326E5F /* model */,
 				8C3D22BA290FC92200326E5F /* AppDelegate.swift */,
 				8C3D22BC290FC92200326E5F /* SceneDelegate.swift */,
 				8C3D22BE290FC92200326E5F /* ViewController.swift */,
@@ -128,6 +137,30 @@
 				8C3D22E0290FC92500326E5F /* CalculatorUITestsLaunchTests.swift */,
 			);
 			path = CalculatorUITests;
+			sourceTree = "<group>";
+		};
+		8C3D22ED291253A400326E5F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				8C3D22F92912D1DE00326E5F /* UIGradientImageView.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		8C3D22EE291253AA00326E5F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				8C3D22F1291253E100326E5F /* gradientView.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		8C3D22F0291253C300326E5F /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				8C3D22F7291256A700326E5F /* GradientViewController.swift */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +270,7 @@
 				8C3D22CA290FC92500326E5F /* LaunchScreen.storyboard in Resources */,
 				8C3D22C7290FC92500326E5F /* Assets.xcassets in Resources */,
 				8C3D22C2290FC92200326E5F /* Main.storyboard in Resources */,
+				8C3D22F2291253E100326E5F /* gradientView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +297,8 @@
 			files = (
 				8C3D22BF290FC92200326E5F /* ViewController.swift in Sources */,
 				8C3D22C5290FC92200326E5F /* Calculator.xcdatamodeld in Sources */,
+				8C3D22FA2912D1DE00326E5F /* UIGradientImageView.swift in Sources */,
+				8C3D22F8291256A700326E5F /* GradientViewController.swift in Sources */,
 				8C3D22BB290FC92200326E5F /* AppDelegate.swift in Sources */,
 				8C3D22BD290FC92200326E5F /* SceneDelegate.swift in Sources */,
 			);

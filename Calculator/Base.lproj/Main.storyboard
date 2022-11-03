@@ -82,6 +82,9 @@
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <action selector="submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pm4-Vh-uhg"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
