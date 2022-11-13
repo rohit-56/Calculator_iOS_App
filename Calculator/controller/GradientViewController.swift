@@ -41,7 +41,7 @@ class GradientViewController: UIViewController {
         )
         password.layer.borderColor = UIColor.white.cgColor
         password.layer.borderWidth = 1.0
-        postRequest()
+      //  postRequest()
        
     }
     
