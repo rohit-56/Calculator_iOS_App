@@ -20,6 +20,9 @@
 		8C3D22F2291253E100326E5F /* gradientView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C3D22F1291253E100326E5F /* gradientView.storyboard */; };
 		8C3D22F8291256A700326E5F /* GradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3D22F7291256A700326E5F /* GradientViewController.swift */; };
 		8C3D22FA2912D1DE00326E5F /* UIGradientImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3D22F92912D1DE00326E5F /* UIGradientImageView.swift */; };
+		8CD76354291D16E300ADF200 /* CompleteScreenView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CD76353291D16E300ADF200 /* CompleteScreenView.storyboard */; };
+		8CD76356291D16FA00ADF200 /* CompleteScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD76355291D16FA00ADF200 /* CompleteScreenViewController.swift */; };
+		8CE8D97E2920BF1800371405 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE8D97D2920BF1800371405 /* Employee.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		8C3D22F1291253E100326E5F /* gradientView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = gradientView.storyboard; sourceTree = "<group>"; };
 		8C3D22F7291256A700326E5F /* GradientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientViewController.swift; sourceTree = "<group>"; };
 		8C3D22F92912D1DE00326E5F /* UIGradientImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIGradientImageView.swift; sourceTree = "<group>"; };
+		8CD76353291D16E300ADF200 /* CompleteScreenView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CompleteScreenView.storyboard; sourceTree = "<group>"; };
+		8CD76355291D16FA00ADF200 /* CompleteScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteScreenViewController.swift; sourceTree = "<group>"; };
+		8CE8D97D2920BF1800371405 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,7 @@
 		8C3D22B9290FC92200326E5F /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				8CE8D97C2920BF0200371405 /* SwiftConcepts */,
 				8C3D22F0291253C300326E5F /* controller */,
 				8C3D22EE291253AA00326E5F /* view */,
 				8C3D22ED291253A400326E5F /* model */,
@@ -151,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				8C3D22F1291253E100326E5F /* gradientView.storyboard */,
+				8CD76353291D16E300ADF200 /* CompleteScreenView.storyboard */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -159,8 +167,17 @@
 			isa = PBXGroup;
 			children = (
 				8C3D22F7291256A700326E5F /* GradientViewController.swift */,
+				8CD76355291D16FA00ADF200 /* CompleteScreenViewController.swift */,
 			);
 			path = controller;
+			sourceTree = "<group>";
+		};
+		8CE8D97C2920BF0200371405 /* SwiftConcepts */ = {
+			isa = PBXGroup;
+			children = (
+				8CE8D97D2920BF1800371405 /* Employee.swift */,
+			);
+			path = SwiftConcepts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +286,7 @@
 			files = (
 				8C3D22CA290FC92500326E5F /* LaunchScreen.storyboard in Resources */,
 				8C3D22C7290FC92500326E5F /* Assets.xcassets in Resources */,
+				8CD76354291D16E300ADF200 /* CompleteScreenView.storyboard in Resources */,
 				8C3D22C2290FC92200326E5F /* Main.storyboard in Resources */,
 				8C3D22F2291253E100326E5F /* gradientView.storyboard in Resources */,
 			);
@@ -296,7 +314,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C3D22BF290FC92200326E5F /* ViewController.swift in Sources */,
+				8CE8D97E2920BF1800371405 /* Employee.swift in Sources */,
 				8C3D22C5290FC92200326E5F /* Calculator.xcdatamodeld in Sources */,
+				8CD76356291D16FA00ADF200 /* CompleteScreenViewController.swift in Sources */,
 				8C3D22FA2912D1DE00326E5F /* UIGradientImageView.swift in Sources */,
 				8C3D22F8291256A700326E5F /* GradientViewController.swift in Sources */,
 				8C3D22BB290FC92200326E5F /* AppDelegate.swift in Sources */,
