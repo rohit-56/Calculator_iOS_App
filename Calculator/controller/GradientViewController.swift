@@ -12,6 +12,9 @@ class GradientViewController: UIViewController {
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var backImage: UIImageView!
+    
+    var viewIconTap = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -42,7 +45,47 @@ class GradientViewController: UIViewController {
         password.layer.borderColor = UIColor.white.cgColor
         password.layer.borderWidth = 1.0
       //  postRequest()
+        
+        
+        
+        // to add action on image or icon
+        let viewPassword = UIImageView()
+        viewPassword.image = UIImage(named: "view-password")
+        
+        let contentView = UIView()
+        contentView.addSubview(viewPassword)
+        
+        contentView.frame = CGRect(x: 0, y: 0, width: (UIImage(named: "view-password")?.size.width)!, height: (UIImage(named: "view-password")?.size.height)!)
+        
+        viewPassword.frame = CGRect(x: -10, y: 0, width: (UIImage(named: "view-password")?.size.width)!, height: (UIImage(named: "view-password")?.size.height)!)
+        
+        password.rightView = contentView
+        password.rightViewMode = .always
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+        //add user interaction enabled image view and tap too
+        viewPassword.isUserInteractionEnabled = true
+        viewPassword.addGestureRecognizer(tapGestureRecognizer)
+        
        
+    }
+    
+    @objc func imageTapped(tapGestureRecognizer:UITapGestureRecognizer){
+        
+        let tappedImage = tapGestureRecognizer.view as! UIImageView
+        
+        if !viewIconTap {
+            viewIconTap = true
+            tappedImage.image = UIImage(named: "icons8-eye-24")
+            password.isSecureTextEntry = false
+        }
+        else{
+            viewIconTap = false
+            tappedImage.image = UIImage(named: "view-password")
+            password.isSecureTextEntry = true
+        }
+        
+        
     }
     
 
@@ -50,7 +93,7 @@ class GradientViewController: UIViewController {
       
       // declare the parameter as a dictionary that contains string as key and value combination. considering inputs are valid
       
-      let parameters: [String: Any] = ["username": "manish@gmail.com", "password": "Hexa@12345"]
+      let parameters: [String: Any] = ["username": "rohit", "password" : "123" ]
       
       // create the url with URL
       let url = URL(string: "https://api.dev.korporate.hexaview.in/users/login")! // change server url accordingly
