@@ -20,6 +20,8 @@
 		8C3D22F2291253E100326E5F /* gradientView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C3D22F1291253E100326E5F /* gradientView.storyboard */; };
 		8C3D22F8291256A700326E5F /* GradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3D22F7291256A700326E5F /* GradientViewController.swift */; };
 		8C3D22FA2912D1DE00326E5F /* UIGradientImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3D22F92912D1DE00326E5F /* UIGradientImageView.swift */; };
+		8C52519029260DB7000B9BD2 /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C52518F29260DB7000B9BD2 /* Calculator.storyboard */; };
+		8C52519229260DE2000B9BD2 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C52519129260DE2000B9BD2 /* CalculatorViewController.swift */; };
 		8CD76354291D16E300ADF200 /* CompleteScreenView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CD76353291D16E300ADF200 /* CompleteScreenView.storyboard */; };
 		8CD76356291D16FA00ADF200 /* CompleteScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD76355291D16FA00ADF200 /* CompleteScreenViewController.swift */; };
 		8CE8D97E2920BF1800371405 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE8D97D2920BF1800371405 /* Employee.swift */; };
@@ -60,6 +62,8 @@
 		8C3D22F1291253E100326E5F /* gradientView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = gradientView.storyboard; sourceTree = "<group>"; };
 		8C3D22F7291256A700326E5F /* GradientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientViewController.swift; sourceTree = "<group>"; };
 		8C3D22F92912D1DE00326E5F /* UIGradientImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIGradientImageView.swift; sourceTree = "<group>"; };
+		8C52518F29260DB7000B9BD2 /* Calculator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calculator.storyboard; sourceTree = "<group>"; };
+		8C52519129260DE2000B9BD2 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		8CD76353291D16E300ADF200 /* CompleteScreenView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CompleteScreenView.storyboard; sourceTree = "<group>"; };
 		8CD76355291D16FA00ADF200 /* CompleteScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteScreenViewController.swift; sourceTree = "<group>"; };
 		8CE8D97D2920BF1800371405 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
@@ -159,6 +163,7 @@
 			children = (
 				8C3D22F1291253E100326E5F /* gradientView.storyboard */,
 				8CD76353291D16E300ADF200 /* CompleteScreenView.storyboard */,
+				8C52518F29260DB7000B9BD2 /* Calculator.storyboard */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 			children = (
 				8C3D22F7291256A700326E5F /* GradientViewController.swift */,
 				8CD76355291D16FA00ADF200 /* CompleteScreenViewController.swift */,
+				8C52519129260DE2000B9BD2 /* CalculatorViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -288,6 +294,7 @@
 				8C3D22C7290FC92500326E5F /* Assets.xcassets in Resources */,
 				8CD76354291D16E300ADF200 /* CompleteScreenView.storyboard in Resources */,
 				8C3D22C2290FC92200326E5F /* Main.storyboard in Resources */,
+				8C52519029260DB7000B9BD2 /* Calculator.storyboard in Resources */,
 				8C3D22F2291253E100326E5F /* gradientView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,6 +327,7 @@
 				8C3D22FA2912D1DE00326E5F /* UIGradientImageView.swift in Sources */,
 				8C3D22F8291256A700326E5F /* GradientViewController.swift in Sources */,
 				8C3D22BB290FC92200326E5F /* AppDelegate.swift in Sources */,
+				8C52519229260DE2000B9BD2 /* CalculatorViewController.swift in Sources */,
 				8C3D22BD290FC92200326E5F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
