@@ -9,30 +9,36 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var background: UIImageView!
+    
+    @IBOutlet weak var iconLogo: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        learnSwift()
+     let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [UIColor.systemBlue.cgColor , UIColor.systemPurple.cgColor]
+        gradientLayer.locations = [0,1]
+        gradientLayer.type = .axial
+        gradientLayer.frame = view.bounds
+        iconLogo.layer.addSublayer(gradientLayer)
+        
+        Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(changeStoryboard), userInfo: nil, repeats: false)
        
     }
-
-    @IBAction func submit(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "gradientView", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "GradientViewController") as UIViewController // Explicit cast is required here.
+    @objc func changeStoryboard(){
+        
+        background.layer.borderWidth = 1.0
+        background.layer.backgroundColor = UIColor.white.cgColor
+        let storyboard = UIStoryboard(name: "Calculator", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "CalculatorViewController") as UIViewController // Explicit cast is required here.
         viewController.modalTransitionStyle = .coverVertical
         viewController.modalPresentationStyle = .fullScreen
         self.present(viewController, animated: true, completion: nil)
     }
-    
-    func learnSwift() -> Int{
-        var e1 = Employee(empName: "Rohit", designation: "Software Engineer")
-        e1.email = "rohit@gmail.com"
-        var e2 = Employee(empName: "Rahul", designation: "AE")
-        
-        print("Employee e1 Name \(String(describing: e1.empName)) and Employee e2 Name \(String(describing: e2.empName)) and again e1 \(e1.email)")
-        return 1;
-    }
+
+ 
     
 }
 
