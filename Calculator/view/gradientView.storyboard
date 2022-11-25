@@ -41,18 +41,33 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duu-lt-j4s">
+                                <rect key="frame" x="145.5" y="555" width="123" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3ql-AS-DYC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back to login">
+                                    <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backtologin:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="n1D-YO-qM6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="AeW-wb-bdF" secondAttribute="trailing" constant="38" id="5vT-ar-0bx"/>
                             <constraint firstItem="sBv-yq-AIz" firstAttribute="top" secondItem="AeW-wb-bdF" secondAttribute="bottom" constant="53" id="9z6-8d-ScU"/>
+                            <constraint firstItem="duu-lt-j4s" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="H7J-H6-etT"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="sBv-yq-AIz" secondAttribute="trailing" constant="38" id="MkU-af-5mN"/>
                             <constraint firstItem="AeW-wb-bdF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="37" id="UEf-jh-Ded"/>
                             <constraint firstItem="04T-Wt-5VD" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="ZIa-N8-pT9"/>
                             <constraint firstItem="04T-Wt-5VD" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="fSy-dM-XsB"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="04T-Wt-5VD" secondAttribute="bottom" id="hvr-Jz-M3C"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="04T-Wt-5VD" secondAttribute="trailing" id="jNs-z4-GT9"/>
+                            <constraint firstItem="duu-lt-j4s" firstAttribute="top" secondItem="sBv-yq-AIz" secondAttribute="bottom" constant="177" id="t3L-dN-MLJ"/>
                             <constraint firstItem="AeW-wb-bdF" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="177" id="vBY-pG-iIK"/>
                             <constraint firstItem="sBv-yq-AIz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="37" id="wjd-ab-Uzm"/>
                         </constraints>

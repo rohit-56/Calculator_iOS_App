@@ -156,4 +156,12 @@ class GradientViewController: UIViewController {
       task.resume()
     }
 
+    @IBAction func backtologin(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Calculator", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "CalculatorViewController") as UIViewController // Explicit cast is required here.
+        viewController.modalTransitionStyle = .coverVertical
+        viewController.modalPresentationStyle = .fullScreen
+        self.present(viewController, animated: true, completion: nil)
+
+    }
 }
