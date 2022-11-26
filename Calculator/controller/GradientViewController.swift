@@ -70,6 +70,14 @@ class GradientViewController: UIViewController {
        
     }
     
+    @IBAction func tableView(_ sender: Any) {
+        
+        let storyboard = UIStoryboard(name: "LearnTableView", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "LearnTableViewController") as UIViewController // Explicit cast is required here.
+        viewController.modalTransitionStyle = .coverVertical
+        viewController.modalPresentationStyle = .fullScreen
+        self.present(viewController, animated: true, completion: nil)
+    }
     @objc func imageTapped(tapGestureRecognizer:UITapGestureRecognizer){
         
         let tappedImage = tapGestureRecognizer.view as! UIImageView
