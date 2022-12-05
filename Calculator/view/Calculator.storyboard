@@ -115,6 +115,9 @@
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <action selector="callCarouselButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="1hn-q9-7vn"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
