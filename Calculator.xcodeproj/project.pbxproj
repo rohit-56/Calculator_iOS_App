@@ -31,6 +31,8 @@
 		8CD33C582938E07100414575 /* ContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD33C572938E07100414575 /* ContentCollectionViewCell.swift */; };
 		8CD76354291D16E300ADF200 /* CompleteScreenView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CD76353291D16E300ADF200 /* CompleteScreenView.storyboard */; };
 		8CD76356291D16FA00ADF200 /* CompleteScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD76355291D16FA00ADF200 /* CompleteScreenViewController.swift */; };
+		8CE728BE293F71D300291F3C /* AddComponentsFromViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE728BD293F71D300291F3C /* AddComponentsFromViewController.swift */; };
+		8CE728C0293F71E500291F3C /* AddComponentsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CE728BF293F71E500291F3C /* AddComponentsStoryboard.storyboard */; };
 		8CE8D97E2920BF1800371405 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE8D97D2920BF1800371405 /* Employee.swift */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +82,8 @@
 		8CD33C572938E07100414575 /* ContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewCell.swift; sourceTree = "<group>"; };
 		8CD76353291D16E300ADF200 /* CompleteScreenView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CompleteScreenView.storyboard; sourceTree = "<group>"; };
 		8CD76355291D16FA00ADF200 /* CompleteScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteScreenViewController.swift; sourceTree = "<group>"; };
+		8CE728BD293F71D300291F3C /* AddComponentsFromViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddComponentsFromViewController.swift; sourceTree = "<group>"; };
+		8CE728BF293F71E500291F3C /* AddComponentsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddComponentsStoryboard.storyboard; sourceTree = "<group>"; };
 		8CE8D97D2920BF1800371405 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,6 +185,7 @@
 				8C52518F29260DB7000B9BD2 /* Calculator.storyboard */,
 				8CAC243C2930F9E800F2A455 /* LearnTableView.storyboard */,
 				8CD33C512938A4EA00414575 /* CarouselStoryboard.storyboard */,
+				8CE728BF293F71E500291F3C /* AddComponentsStoryboard.storyboard */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 				8C52519129260DE2000B9BD2 /* CalculatorViewController.swift */,
 				8CAC243E2930F9FF00F2A455 /* LearnTableViewController.swift */,
 				8CD33C532938A50900414575 /* CarouselViewController.swift */,
+				8CE728BD293F71D300291F3C /* AddComponentsFromViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -312,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CAC243D2930F9E800F2A455 /* LearnTableView.storyboard in Resources */,
+				8CE728C0293F71E500291F3C /* AddComponentsStoryboard.storyboard in Resources */,
 				8C3D22CA290FC92500326E5F /* LaunchScreen.storyboard in Resources */,
 				8C3D22C7290FC92500326E5F /* Assets.xcassets in Resources */,
 				8CD33C522938A4EA00414575 /* CarouselStoryboard.storyboard in Resources */,
@@ -356,6 +363,7 @@
 				8C3D22F8291256A700326E5F /* GradientViewController.swift in Sources */,
 				8C3D22BB290FC92200326E5F /* AppDelegate.swift in Sources */,
 				8C52519229260DE2000B9BD2 /* CalculatorViewController.swift in Sources */,
+				8CE728BE293F71D300291F3C /* AddComponentsFromViewController.swift in Sources */,
 				8C3D22BD290FC92200326E5F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

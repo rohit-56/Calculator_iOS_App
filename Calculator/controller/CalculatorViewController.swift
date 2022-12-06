@@ -41,4 +41,13 @@ class CalculatorViewController: UIViewController {
         viewController.modalPresentationStyle = .fullScreen
         self.present(viewController, animated: true, completion: nil)
     }
+    
+    @IBAction func callAddComponentsFromVC(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "AddComponentsStoryboard", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "AddComponentsFromViewController") as UIViewController // Explicit cast is required here.
+        viewController.modalTransitionStyle = .coverVertical
+        viewController.modalPresentationStyle = .fullScreen
+        self.present(viewController, animated: true, completion: nil)
+    }
+    
 }
