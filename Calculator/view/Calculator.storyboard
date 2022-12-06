@@ -147,6 +147,9 @@
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <action selector="callAddComponentsFromVC:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="RIa-xM-VVr"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
